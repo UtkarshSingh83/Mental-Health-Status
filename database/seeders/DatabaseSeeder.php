@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         
         // Run the assessment questions seeder
         $this->call([
+            TestUserSeeder::class,
             AssessmentQuestionSeeder::class,
         ]);
     }
